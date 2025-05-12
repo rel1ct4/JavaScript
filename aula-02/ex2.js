@@ -17,7 +17,9 @@ Valor final: R$ 108.00
 
 let compra, desconto, valor
 
-compra = Number(prompt("Qual o valor da compra? "))
+compra = Number(prompt("Qual o valor da compra? ")) 
+desconto = compra >= 100 ? compra * 0.10 : compra * 0.05
+valor = compra - desconto
 
 //Com if else
 /**if(compra >= 100){
@@ -34,17 +36,8 @@ compra = Number(prompt("Qual o valor da compra? "))
     console.log(`Valor final: R$ ${valor}`)
 }
  */
-//Com operador ternário
-compra > 100 ?
-    desconto = compra * (10/compra)
-    valor = compra - desconto 
-    console.log(`Valor original: R$ ${compra}`) 
-    console.log(`Desconto aplicado: R$ ${desconto}`) 
-    console.log(`Valor final: R$ ${valor}`) 
-    :
-    desconto = compra * (5/compra)
-    valor = compra - desconto
-    console.log(`Valor original: R$ ${compra}`)
-    console.log(`Desconto aplicado: R$ ${desconto}`)
-    console.log(`Valor final: R$ ${valor}`)
+
+alert(`Valor original: R$ ${compra}`) 
+alert(`Desconto aplicado: R$ ${desconto}`) 
+alert(`Valor final: R$ ${valor}`) 
 
