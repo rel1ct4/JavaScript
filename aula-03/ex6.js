@@ -22,7 +22,7 @@ let resultado = 0
 
 for (let i = 0; i < numero; i++) {
 
-    if(numero % 2 === 0){
+    if(i % 2 === 0){
         resultado += i
         console.log(resultado)
     
